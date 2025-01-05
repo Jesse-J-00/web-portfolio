@@ -64,7 +64,7 @@ nav {
 
 #hero {
     background: url(Images/banner.jpg);
-    background-size: contain;
+    background-size: flex;
     color: white;
     transition: all;
     padding: 120px;
