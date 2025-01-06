@@ -368,12 +368,20 @@ footer p {
         padding: 80px;
     }
 
-    .introduction {
+ .introduction {
         flex-direction: column;
-        padding: 50px;
-        gap: 20px;
+        padding:20px;
+        gap: 5px;
+        background-size: contain;
+        background-repeat: repeat;
+        height: fit-content;
+        text-align: center;
+ }
+     #logos{
+        white-space: nowrap;
+        padding-top: 1%;
     }
-
+    
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
         gap: 30px;
@@ -412,8 +420,19 @@ footer p {
         flex-direction: row;
         padding: 96px;
         gap: 30px;
+        height: fit-content;
+        background-size: contain;
+        height: fit-content;
+        text-align: center;
+        
+    }
     }
 
+     #logos{
+        white-space: nowrap;
+        padding-top: 1%;
+    }
+    
     .gallery {
         grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
         gap: 40px;
