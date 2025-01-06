@@ -35,6 +35,7 @@ nav {
 }
 
 .nav-links {
+    display: flex;
     list-style: none;
     display: flex;
     gap: 20px;
@@ -75,7 +76,7 @@ nav {
 /*logo*/
 .logosec{
     background-color: #fbfbfb;
-    background-size: absolute;
+    background-size: flex;
     height: 5%;
     width: 100%;
 }
@@ -141,6 +142,7 @@ nav {
 
 /* Gallery Container */
 .gallery {
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 90px; /* Space between items */
@@ -268,6 +270,7 @@ footer p {
     margin-top: 10px;
     font-size: 0.9em;
 }
+
 /* Media Queries */
 
 /* Mobile Devices (max-width: 600px) */
@@ -277,7 +280,7 @@ footer p {
     }
 
     .logo img {
-        max-width: 60px;
+        max-width: 70px;
     }
 
     .nav-links {
@@ -291,15 +294,24 @@ footer p {
     }
 
     #hero {
-        font-size: large;
-        padding: 60px;
+        font-size: medium;
+        padding:220px;
+        padding-left: 19%;
+        padding-top: 1%;
+        padding-bottom: 9%;
         text-align: center;
+        white-space: nowrap;
     }
 
     .introduction {
         flex-direction: column;
-        padding: 20px;
-        gap: 15px;
+        padding:20px;
+        gap: 5px;
+        background-size: contain;
+        background-repeat: repeat;
+        height: fit-content;
+        text-align: center;
+        
     }
 
     .btn {
@@ -307,9 +319,24 @@ footer p {
         padding: 8px 10px;
     }
 
+    #logos{
+        white-space: nowrap;
+        padding-top: 1%;
+    }
+
     .gallery {
         grid-template-columns: 1fr; /* Single column for smaller screens */
-        gap: 20px;
+        gap: 30px;
+        width: 100%;
+        size: 90%;
+        max-width: fit-content;
+        height: fit-content;
+        
+    }
+
+    #portfolio{
+        size:200%;
+        max-width: fit-content;
     }
 
     form {
