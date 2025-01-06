@@ -268,3 +268,132 @@ footer p {
     margin-top: 10px;
     font-size: 0.9em;
 }
+/* Media Queries */
+
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        max-width: 60px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    #hero {
+        font-size: large;
+        padding: 60px;
+        text-align: center;
+    }
+
+    .introduction {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 20px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    form input, form textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+/* Tablets (min-width: 601px and max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .logo img {
+        max-width: 70px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 1.1em;
+    }
+
+    #hero {
+        font-size: large;
+        padding: 80px;
+    }
+
+    .introduction {
+        flex-direction: column;
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+        gap: 30px;
+    }
+
+    form input, form textarea {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+/* Desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 1.2em;
+    }
+
+    #hero {
+        font-size: x-large;
+        padding: 120px;
+    }
+
+    .introduction {
+        flex-direction: row;
+        padding: 96px;
+        gap: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+        gap: 40px;
+    }
+
+    form input, form textarea {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}
